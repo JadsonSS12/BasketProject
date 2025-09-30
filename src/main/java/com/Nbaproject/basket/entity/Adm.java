@@ -1,25 +1,24 @@
 package com.Nbaproject.basket.entity;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Setter
+
 @Getter
-@AllArgsConstructor
-@NoArgsConstructor
+@Setter
 @Entity
-@Table(name = "user")
-public class User {
+@AllArgsConstructor
+@Table(name = "adm")
+public class Adm {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private String password;
     private String email;
+    private String password;
     private boolean isAuthenticated;
+
 }
